@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  generate-avsc:
+    image: generate-avsc
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build
+    volumes:
+      - ./avsc:/home/avro-gen/avsc
+
+  generate-dotnet:
+    image: generate-dotnet
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    volumes:
+      - ./dotnet:/home/avro-gen/dotnet

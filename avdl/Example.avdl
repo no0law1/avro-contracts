@@ -1,0 +1,9 @@
+@namespace("com.instanceof")
+protocol ExampleProtocol {
+    record Example {
+        string name;
+        int age;
+        string email;
+        union {null, string} address = null;
+    }
+}

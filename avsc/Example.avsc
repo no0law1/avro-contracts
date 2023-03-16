@@ -1,0 +1,19 @@
+{
+  "type" : "record",
+  "name" : "Example",
+  "namespace" : "com.instanceof",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string"
+  }, {
+    "name" : "age",
+    "type" : "int"
+  }, {
+    "name" : "email",
+    "type" : "string"
+  }, {
+    "name" : "address",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}
